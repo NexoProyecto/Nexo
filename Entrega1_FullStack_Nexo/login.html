@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     SGDM - Página: login.html  →  INICIAR SESIÓN
+     ------------------------------------------------------------
+     Puerta de entrada a las vistas PRIVADAS del sistema.
+     En la primera entrega es solo MAQUETADO: el formulario no
+     valida usuarios todavía (eso se hará con PHP y MySQL en la
+     segunda entrega). Por eso agregamos abajo tres enlaces de
+     demostración para poder mostrar las vistas de cada rol:
+       - Participante      →  participante.html
+       - Organizador       →  organizador.html
+       - Administrador     →  admin.html
+     ============================================================ -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGDM | Iniciar sesión</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    
+    <nav class="menu">
+       <!-- Logo de la aplicación: la etiqueta <img> muestra una imagen.
+     src = dónde está el archivo, alt = texto si no carga -->
+<!-- Logo de la aplicación: la etiqueta <img> muestra una imagen.
+     src = dónde está el archivo, alt = texto si no carga -->
+<div class="logo"><img src="img/logo.png" alt="Logo SGDM" class="logo-img"> SGDM</div>
+        <ul>
+            <li><a href="index.html"><span class="icono">🏠︎</span> Inicio</a></li>
+            <li><a href="torneos.html"><span class="icono">𐃯</span> Torneos</a></li>
+            <li><a href="calendario.html"><span class="icono">🗓</span> Calendario</a></li>
+            <li><a href="login.html" class="activo"><span class="icono">♔</span> Ingresar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="encabezado">
+            <h1>Iniciar sesión</h1>
+            <p>Ingresá con tu usuario para acceder a tu panel según tu rol.</p>
+        </header>
+
+        <!-- Formulario de inicio de sesión (solo diseño) -->
+        <section class="seccion">
+            <form class="formulario">
+                <label>Correo electrónico
+                    <input type="email" placeholder="nombre@correo.com">
+                </label>
+                <label>Contraseña
+                    <!-- type="password" oculta lo que se escribe -->
+                    <input type="password" placeholder="••••••••">
+                </label>
+                <button type="button" class="boton">Ingresar</button>
+            </form>
+        </section>
+
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <h2>Vistas de demostración por rol</h2>
+            </div>
+            <div class="panel">
+                <a href="participante.html">
+                    <span class="icono">🎖</span>
+                    <strong>Participante</strong>
+                    <span>Ve sus torneos, calendario y posición</span>
+                </a>
+                <a href="organizador.html">
+                    <span class="icono">✎</span>
+                    <strong>Organizador de torneo</strong>
+                    <span>Gestiona sus torneos y carga resultados</span>
+                </a>
+                <a href="admin.html">
+                    <span class="icono">🛠</span>
+                    <strong>Administrador general</strong>
+                    <span>Control total del sistema</span>
+                </a>
+            </div>
+        </section>
+
+        <footer class="pie">
+            SGDM · Sistema de Gestión de Torneos Modulares · Grupo Nexo · 3°MK · 2026
+        </footer>
+    </main>
+</body>
+</html>

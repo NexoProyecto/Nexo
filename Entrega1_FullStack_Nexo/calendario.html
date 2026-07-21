@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     SGDM - Página: calendario.html  →  CALENDARIO Y RESULTADOS
+     ------------------------------------------------------------
+     Vista PÚBLICA. Cualquier visitante puede consultar los
+     próximos partidos y los resultados oficiales ya jugados,
+     pero NO puede cambiarlos (eso lo hace el organizador desde
+     su panel, en organizador.html).
+     ============================================================ -->
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGDM | Calendario</title>
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+    
+    <nav class="menu">
+      
+<div class="logo"><img src="img/logo.png" alt="Logo SGDM" class="logo-img"> SGDM</div>
+        <ul>
+            <li><a href="index.html"><span class="icono">🏠︎</span> Inicio</a></li>
+            <li><a href="torneos.html"><span class="icono">𐃯</span> Torneos</a></li>
+            <li><a href="calendario.html" class="activo"><span class="icono">🗓</span> Calendario</a></li>
+            <li><a href="login.html"><span class="icono">♔</span> Ingresar</a></li>
+        </ul>
+    </nav>
+
+    <main>
+        <header class="encabezado">
+            <h1>Calendario</h1>
+            <p>Próximos partidos y resultados oficiales de todos los torneos.</p>
+        </header>
+
+        <!-- PRÓXIMOS PARTIDOS: partidos que todavía no se jugaron -->
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <h2>Próximos partidos</h2>
+            </div>
+            <div class="contiene-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th><th>Hora</th><th>Torneo</th><th>Enfrentamiento</th><th>Ronda</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>06/07</td><td>14:00</td><td>Copa Invierno</td><td>Los Halcones vs Nexo FC</td><td>Fecha 5</td></tr>
+                        <tr><td>06/07</td><td>16:00</td><td>Copa Invierno</td><td>Atlético Sur vs Deportivo Norte</td><td>Fecha 5</td></tr>
+                        <tr><td>08/07</td><td>18:00</td><td>Torneo Apertura</td><td>Team Alpha vs Black Dragons</td><td>Semifinal</td></tr>
+                        <tr><td>10/07</td><td>10:00</td><td>Abierto de Ajedrez</td><td>S. García vs M. Pereira</td><td>Ronda 3</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <h2>Últimos resultados</h2>
+            </div>
+            <div class="contiene-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fecha</th><th>Torneo</th><th>Enfrentamiento</th><th>Resultado</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>29/06</td><td>Copa Invierno</td><td>Nexo FC vs Atlético Sur</td><td>3 - 1</td></tr>
+                        <tr><td>29/06</td><td>Copa Invierno</td><td>Los Halcones vs Deportivo Norte</td><td>2 - 0</td></tr>
+                        <tr><td>27/06</td><td>Torneo Apertura</td><td>Wolves U. vs Mighty Esports</td><td>2 - 1</td></tr>
+                        <tr><td>26/06</td><td>Abierto de Ajedrez</td><td>M. Pereira vs J. Techera</td><td>1 - 0</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+        <footer class="pie">
+            SGDM · Sistema de Gestión de Torneos Modulares · Grupo Nexo · 3°MK · 2026
+        </footer>
+    </main>
+</body>
+</html>

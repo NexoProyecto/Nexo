@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<!-- ============================================================
+     SGDM - Sistema de Gestión de Torneos Modulares
+     Página: index.html  →  INICIO (vista del USUARIO PÚBLICO)
+     ------------------------------------------------------------
+     ROL: Usuario Público (visitante SIN registro).
+     Según el proyecto, este rol SOLO puede MIRAR información:
+     torneos publicados, calendarios, resultados y posiciones.
+     Por eso en esta página no hay ningún botón que modifique
+     datos: solo enlaces para ver y el botón "Iniciar sesión".
+     ============================================================ -->
+<html lang="es">
+<head>
+    
+    <meta charset="UTF-8">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SGDM | Inicio</title>
+    
+    <link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+   
+    <nav class="menu">
+       
+<div class="logo"><img src="img/logo.png" alt="Logo SGDM" class="logo-img"> SGDM</div>
+
+        <ul>
+            <!-- class="activo" marca la página actual -->
+            <li><a href="index.html" class="activo"><span class="icono">🏠︎</span> Inicio</a></li>
+            <li><a href="torneos.html"><span class="icono">𐃯</span> Torneos</a></li>
+            <li><a href="calendario.html"><span class="icono">🗓</span> Calendario</a></li>
+            <li><a href="login.html"><span class="icono">♔</span> Ingresar</a></li>
+        </ul>
+    </nav>
+
+    
+    <main>
+
+        
+        <header class="encabezado">
+            <h1>Bienvenido a SGDM</h1>
+            <a href="login.html" class="boton">Iniciar sesión</a>
+            <p>Organizá, participá y seguí torneos deportivos, mentales y electrónicos.</p>
+        </header>
+
+        <section class="estadisticas">
+            <div class="estadistica">
+                <span class="icono">𐃯</span>
+                <div><strong>24</strong><span>Torneos creados</span></div>
+            </div>
+            <div class="estadistica">
+                <span class="icono">𖨆</span>
+                <div><strong>120</strong><span>Participantes inscriptos</span></div>
+            </div>
+            <div class="estadistica">
+                <span class="icono">🗓</span>
+                <div><strong>8</strong><span>Próximos torneos</span></div>
+            </div>
+            <div class="estadistica">
+                <span class="icono">🕹</span>
+                <div><strong>15</strong><span>Partidos hoy</span></div>
+            </div>
+        </section>
+
+        
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <h2>Próximos torneos</h2>
+                <a href="calendario.html">Ver calendario ›</a>
+            </div>
+
+            <div class="lista-torneos">
+
+              
+                <article class="torneo">
+                   <img src="img/futbol.jpg" alt="Torneo de fútbol" class="portada-img">
+                    <div class="datos">
+                        <span class="etiqueta etiqueta-liga">Liga</span>
+                        <h3>Copa Invierno · Fútbol 7</h3>
+                        <div class="dato">🗓 24 de mayo - 14 de junio</div>
+                        <div class="dato">⚲ Montevideo, Uruguay</div>
+                        <a href="torneos.html" class="boton-borde">Ver detalles</a>
+                    </div>
+                </article>
+
+                
+                <article class="torneo">
+                     <img src="img/counter.webp" alt="Torneo de fútbol" class="portada-img">
+                    <div class="datos">
+                        <span class="etiqueta etiqueta-eliminacion">Eliminación directa</span>
+                        <h3>Torneo Apertura · eSports</h3>
+                        <div class="dato">🗓 18 de mayo - 30 de mayo</div>
+                        <div class="dato">⚲ Online</div>
+                        <a href="torneos.html" class="boton-borde">Ver detalles</a>
+                    </div>
+                </article>
+
+                
+                <article class="torneo">
+                     <img src="img/ajedrez.jpg" alt="Torneo de fútbol" class="portada-img">
+                    <div class="datos">
+                        <span class="etiqueta etiqueta-suizo">Sistema suizo</span>
+                        <h3>Abierto de Ajedrez</h3>
+                        <div class="dato">🗓 1 de junio - 21 de junio</div>
+                        <div class="dato">⚲ Instituto Arias-Balparda</div>
+                        <a href="torneos.html" class="boton-borde">Ver detalles</a>
+                    </div>
+                </article>
+
+            </div>
+        </section>
+
+        
+        <section class="seccion">
+            <div class="titulo-seccion">
+                <h2>Tabla de posiciones · Copa Invierno</h2>
+            </div>
+         
+            <div class="contiene-tabla">
+                <table>
+                    <thead>
+                        <tr>
+                            <th>#</th><th>Equipo</th><th>PJ</th><th>G</th><th>E</th><th>P</th><th>Pts</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr><td>1</td><td>Los Halcones</td><td>4</td><td>4</td><td>0</td><td>0</td><td>12</td></tr>
+                        <tr><td>2</td><td>Nexo FC</td><td>4</td><td>3</td><td>0</td><td>1</td><td>9</td></tr>
+                        <tr><td>3</td><td>Atlético Sur</td><td>4</td><td>1</td><td>1</td><td>2</td><td>4</td></tr>
+                        <tr><td>4</td><td>Deportivo Norte</td><td>4</td><td>0</td><td>1</td><td>3</td><td>1</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </section>
+
+     
+        <footer class="pie">
+            SGDM · Sistema de Gestión de Torneos Modulares · Grupo Nexo · 3°MK · 2026
+        </footer>
+
+    </main>
+</body>
+</html>
